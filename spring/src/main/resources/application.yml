@@ -1,0 +1,15 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: produto
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://localhost:27017/fatec-produto
+
+# URL do serviço de cliente pro Feign
+services:
+  cliente:
+    url: http://localhost:8083
